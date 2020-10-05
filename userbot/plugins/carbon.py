@@ -92,7 +92,7 @@ async def carbon_api(e):
 
    code = quote_plus(pcode) # Converting to urlencoded
 
-   await e.edit("`Meking Carbon...\n25%`")
+   await e.edit("`Meking Carbon...🤙🤙\n25%`")
 
    url = CARBON.format(code=code, lang=CARBONLANG)
 
@@ -152,7 +152,7 @@ async def carbon_api(e):
 
          file,
 
-         caption="<< Here's your carbon, \n Carbonised by [FRIDAY](https://www.github.com/Amshenshanu07/Userbot)>> ",
+         caption="<< Here's your carbon, \n Carbonised by [FRIDAY](https://www.github.com/r0otbyte/userbot)>> ",
 
          force_document=True,
 

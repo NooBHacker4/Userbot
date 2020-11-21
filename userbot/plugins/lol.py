@@ -13,7 +13,7 @@ from uniborg.util import admin_cmd
 
 
 
-@borg.on(admin_cmd(pattern=r"lol"))
+@borg.on(admin_cmd(pattern=r"..."))
 
 async def _(event):
 
@@ -21,9 +21,9 @@ async def _(event):
 
         return
 
-    await event.edit("Typing...")
+    await event.edit("Getting Perfect Lough wait...")
 
-    await asyncio.sleep(2)
+    await asyncio.sleep(1)
     
     x=(random.randrange(1,28))
     if (x==1):
@@ -67,7 +67,7 @@ async def _(event):
     if (x==20):
       await event.edit(";;;llloo;oo;ollll;;")
     if (x==21):
-      await event.edit("lol me laughed hehehe")
+      await event.edit("lol me laughed hehehehehehehehehehehhheheheheheheheheheheheheheheheheheheheheh")
     if (x==22):
       await event.edit("tum haso ab lol")
     if (x==23):
@@ -79,7 +79,7 @@ async def _(event):
     if (x==26):
       await event.edit("l|o|l")
     if (x==27):
-      await event.edit("hola lol")
+      await event.edit("I thinks This Is Best Time To Say `*lol*`")
     if (x==28):
       await event.edit("llllllllllllllooooooooooollllllllll")
     

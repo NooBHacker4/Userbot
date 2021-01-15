@@ -30,8 +30,8 @@ from userbot.utils import admin_cmd
 from userbot import ALIVE_NAME, CUSTOM_STICKER_PACK_NAME, CUSTOM_ANIMATED_PACK_NAME
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Who is this"
-CUSTOM_STICKER_NAME =str(CUSTOM_STICKER_PACK_NAME) if CUSTOM_STICKER_PACK_NAME else "My Boss Friday Volume Pack One"
-CUSTOM_ANIME_PACK = str(CUSTOM_ANIMATED_PACK_NAME) if CUSTOM_ANIMATED_PACK_NAME else "My Boss Animated Pack"
+CUSTOM_STICKER_NAME =str(CUSTOM_STICKER_PACK_NAME) if CUSTOM_STICKER_PACK_NAME else "@certified_youtuber [PACK 2]"
+CUSTOM_ANIME_PACK = str(CUSTOM_ANIMATED_PACK_NAME) if CUSTOM_ANIMATED_PACK_NAME else "certified_youtuber [ANIM]"
 FILLED_UP_DADDY = "Invalid pack selected."
 
 @borg.on(admin_cmd(pattern="kang ?(.*)"))
@@ -58,12 +58,12 @@ async def _(event):
         packname = f"@StarkGang Packs 🎭"
         packshortname = "StarkGangPack"
     else:
-        packname = f"{user.first_name}'s FRIDAY Vol.{pack}"
-        packshortname = f"FRIDAY_{userid}_Pack"
+        packname = f"{user.first_name}'s .{pack}"
+        packshortname = f"certified_youtuber_pack1"
     await event.edit("`Is It Legal ? Oh Yes it is !! \nLook That Way ! Let me Kang This ¯\_(ツ)_/¯`")
 
     is_a_s = is_it_animated_sticker(reply_message)
-    file_ext_ns_ion = "@FRIDAY.png"
+    file_ext_ns_ion = "@BOBBY.png"
     file = await borg.download_file(reply_message.media)
     uploaded_sticker = None
     if is_a_s:
